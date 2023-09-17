@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header, footer {
+    background-color: #282c34;
+    color: #fff;
+}
+
+header .container, footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+.profile-pic {
+    width: 150px;  /* Adjust as necessary */
+    height: auto;  /* Maintains the aspect ratio */
+    border-radius: 50%;  /* Optional: creates a rounded image */
+    margin: 0 auto;  /* Centers the image horizontally */
+    display: block;  /* Works with margin auto to center the image */
+}
+
