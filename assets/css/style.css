@@ -53,7 +53,7 @@ footer p {
     margin: 0;
 }
 .profile-pic {
-    width: 150px;  /* Adjust as necessary */
+    width: 75px;  /* Adjust as necessary */
     height: auto;  /* Maintains the aspect ratio */
     border-radius: 50%;  /* Optional: creates a rounded image */
     margin: 0 auto;  /* Centers the image horizontally */
