@@ -59,4 +59,9 @@ footer p {
     margin: 0 auto;  /* Centers the image horizontally */
     display: block;  /* Works with margin auto to center the image */
 }
-
+.portfolio-pic {
+    width: 300px;
+    height: auto;
+    margin-left: 0%;
+    display: flex;
+}
