@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<title>Financial Model</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .nav {
+        background-color: #112C47;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: #112C47;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 16px;
+    }
+    .hamburger-menu div {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+    }
+	html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    footer {
+        background-color: #112C47;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Financial Model</h1>
+        <div class="nav">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    function toggleMenu() {
+        document.getElementById('nav-menu').classList.toggle('active');
+    }
+</script>
+<main>
+<h3>Comprehensive Financial Model</h3>
+        <p>In the dynamic world of startups, the trajectory from conception to success is less of a straight 
+            path and more of a complex maze. Having traversed this labyrinthine journey numerous times, I 
+            identified the necessity for a tool that could intuitively and accurately project the multiple 
+            facets of business growth and sustainability. Armed with a rich background in business development 
+            and financial analysis, I set out to create a comprehensive financial model that stands as a 
+            beacon of foresight and precision in the unpredictable sea of startup ventures.</p>
+        <h4>A Canvas of Financial Artistry</h4>
+        <p>In its essence, my financial model is akin to an artist's canvas, where turnkey assumptions blend 
+            seamlessly to paint a vivid and precise picture of a startup's future. This tool automatically 
+            populates projections, offering an expansive view that covers annual income, balance sheets, 
+            and cash flows, thereby serves as a bedrock for informed decision-making and strategic planning.
+        </p>
+        <div style="display: flex; justify-content: space-between;">
+            <img src="assets/images/assumptions_1.png" alt="Assumptions" width="50%">
+            <img src="assets/images/assumptions_2.png" alt="Assumptions continued" width="50%">
+        </div>
+        <h4>Predicting the Pulse of Business Traffic and Sales</h4>
+        <p>One of the standout features of this model is its ability to predict business traffic and 
+            intricate sales details with impeccable accuracy. It navigates through a sea of variables, 
+            providing startup ventures with a detailed road map that outlines potential customer traffic flows 
+            and sales trajectories. This foresight empowers businesses to strategize and adapt dynamically, 
+            ensuring they are always a step ahead in the competitive market.
+        </p>
+        <div style="display: flex; justify-content: space-between;">
+            <img src="assets/images/waterfalls.png" alt="Waterfalls" width="75%">
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <img src="assets/images/traffic.png" alt="Traffic Spend" width="75%">
+        </div>
+        <h4>Employee Growth Metrics: Scaling with Precision</h4>
+        <p>In the bustling ecosystem of startups, growth is not just a goal but a necessity. 
+            My financial model lends a meticulous eye towards employee growth metrics, helping startups 
+            to scale up seamlessly without losing sight of their core values and operational efficiency. 
+            It crafts a growth narrative that is both sustainable and strategic, facilitating a harmonious 
+            synergy between workforce expansion and business goals, while taking into account the costs of growth.
+        </p>
+        <div style="display: flex; justify-content: space-between;">
+            <img src="assets/images/employees.png" alt="Employee Costs" width="75%">
+        </div>
+        <h4>Unit Economics: The Litmus Test for Startup Success</h4>
+        <p>At the core of gauging the viability and success of any startup venture lies a deep understanding 
+            of unit economics. This financial model stands as a robust tool in deciphering the unit economics 
+            that are pivotal in delineating the success trajectory of a startup. By analyzing critical parameters 
+            like customer acquisition cost (CAC), customer lifetime value (LTV), and gross margins, it furnishes 
+            startups with insightful data to optimize their strategies for exponential growth and sustainability.
+        </p>
+        <div style="display: flex; justify-content: space-between;">
+            <img src="assets/images/unit_economics.png" alt="Unit Economics" width="75%">
+        </div>
+        <h4>The Journey Ahead</h4>
+        <p>As with all models, this one is a living document, and I am constantly looking for ways to improve it 
+            wherever I can. As it stands, this is built around a product based business, and in the future I will be 
+            looking to expand it to make more informed decisions about software, technology, and general service based 
+            businesses. This tool embodies my experiences, insights, and expertise, curated and refined over years of 
+            navigating the vibrant world of startups. I invite fellow entrepreneurs, business analysts, and 
+            financial enthusiasts to explore this tool, and provide feedback to me.
+        </p>
+        <p>Feel free to connect with me to delve deeper into the intricacies of this financial model. 
+            I am eager to collaborate and learn how I can better improve this tool.
+        </p>
+</main>
+<footer>
+    <div class="container">
+        <p>© 2023 - All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
