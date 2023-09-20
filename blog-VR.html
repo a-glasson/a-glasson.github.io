@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<title>VR Blog Post</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .nav {
+        background-color: #112C47;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: #112C47;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 16px;
+    }
+    .hamburger-menu div {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+    }
+	html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    footer {
+        background-color: #112C47;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>VR Blog Post</h1>
+        <div class="nav">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    function toggleMenu() {
+        document.getElementById('nav-menu').classList.toggle('active');
+    }
+</script>
+<main>
+    <h3>From Slopes to Screens: My Journey to Becoming a World Champion</h3>
+    <p>As a child, my two worlds were seemingly disparate: the crisp, cold expanse of a mountainside draped 
+        in pristine snow, and the electric buzz of the gaming realm, filled with pixels and possibilities. 
+        I was lucky enough to have a dad who was just as into video games, when I was young, as his kids were.
+        We had an original Pong terminal in our game room, but the system I grew up with was a Sega Genesis. 
+        My brother and I would spend hours on the weekends playing co-op runs on X-Men, or switching off controllers on the original Sonic 
+        the Hedgehog, and even indulging ourselves in the collective trauma that would become the infamously morbid story behind 
+        Ecco the Dolphin. As a young child, 32-bits was as realistic as we could possibly imagine (however if you do a little reading 
+        into this subject, CRT TVs also played a huge role in this), and we couldn't possibly conceptualize how these virual worlds 
+        would grow and develop. Many times children are asked the question: "What do you want to be when you grow up?" and oftentimes 
+        the answers can be quite wacky for younger kids. For me, the answer was threefold: "I want to be a paleontologist, and I want to be 
+        an astronaut, and I want to be a professional video game player!" As fate would have it, and little did I know, I would 
+        fulfill one of those dreams before the age of 30 - trust me I'll update you when I make my way to space too.
+        <br>
+        <div style="display: flex; justify-content: space-between;">
+            <img src="assets/images/Dk1.jpg" alt="DK1" width="50%">
+            <img src="assets/images/rift1.png" alt="Rift" width="50%">
+        </div>
+        <br>
+        In 2013, after a very successful Kickstarter campaign, I received my Oculus DK1 - the first true consumer VR device (products like the Virtual Boy, excluded).
+        In 15 or so short years, we had gone from those 32-bit games on CRT TVs to high-definition games on flat screens, and now 
+        a headset you could wear and even be a part of the worlds that people had built. After spending my time with DK1, 
+        while it may have lacked both form and function, I was one of the first in line to buy an Oculus Rift in 2014 because 
+        I saw the potential of this new technology.
+        These domains, one might think, stood at odds with each other. But for me, they were facets of the 
+        same dream – a dream that encompassed both the thrill of skiing professionally and the adrenaline 
+        rush of competitive gaming. As I stood victorious, holding the VR League World Championship title in 
+        December of 2020, I couldn't help but draw parallels between the mountain slopes and the gaming arenas, 
+        my two playgrounds where dreams met reality.
+    </p>
+    <h4>The Ascent: Ski Slopes and Leveling Up</h4>
+    <p>In both skiing and gaming, the journey begins with an ascent, be it maneuvering through the snowy trails or 
+        grinding through the levels in a game. Just as I carved my path through the snow, mastering the art of balance 
+        and control, I navigated through the complex labyrinths of the gaming world, strategizing and honing my skills. 
+        The hours spent training on the slopes mirrored the time invested in perfecting my gaming strategy, a testament to 
+        dedication and perseverance.
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+        <img src="assets/images/skiing-2.jpg" alt="Skiing" width="60%">
+    </div>
+    <h4>The Rush: Speeding Downhill and Fast-Paced Gaming</h4>
+    <p>As a professional skier, the sensation of speeding downhill with the cold wind against my face was an 
+        exhilarating experience. The same rush engulfed me in the gaming arena, where every second counted, and 
+        reactions had to be lightning fast. The thrill of a downhill race resonated with the fervor of well executed play in Echo Arena, 
+        where agility, quick thinking, and precision were paramount.
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+        <img src="assets/images/echo-arena.png" alt="Echo Arena" width="75%">
+    </div>
+    <h4>Strategy and Technique: Crafting the Perfect Run and Game Plan</h4>
+    <p>Both skiing and gaming are realms where strategy and technique are vital. In skiing, every run is a 
+        blend of meticulous planning and spontaneous decisions, a harmony of grace and power. Similarly, in 
+        gaming, a well-laid-out plan can be the cornerstone of victory, requiring a deep understanding of the 
+        game mechanics and a knack for anticipating opponents' moves.
+    </p>
+    <h4>The Pinnacle: World Championship and the Ultimate Victory</h4>
+    <p>When I clinched the e-Sports World Championship title in December of 2020, the moment was surreal, a testament to 
+        the years of dedication and the burning passion that fueled my journey. It was akin to conquering the most 
+        challenging slope, a triumph that echoed the countless hours of practice, the falls, and the triumphant rises. 
+        The victory was not just a personal achievement, but a celebration of the synergy between my two worlds, 
+        a manifestation of childhood dreams transformed into reality.
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+        <img src="assets/images/echo-arena2.jpg" alt="Echo Arena" width="75%">
+    </div>
+    <h4>Conclusion: Where Dreams Converge</h4>
+    <p>As I look back, I realize that skiing and gaming were never truly disparate realms. Instead, they were 
+        parallel journeys, echoing the same narratives of determination, grit, and the pursuit of excellence. 
+        The mountains taught me resilience, while the gaming arenas sharpened my strategic thinking. In both 
+        domains, I learned to embrace the journey, the challenges, and the victories with equal grace.
+        <br>
+        <br>
+        From the snowy slopes to the vibrant screens, my journey has been an ode to childhood dreams, 
+        a testament to the fact that with passion and perseverance, no peak is too high, no challenge too great. 
+        And as the virtual confetti mirrored the sparkle of fresh snow under the morning sun, I stood there, a 
+        champion, where dreams converged, at the nexus of pixels and powder.
+    </p>
+</main>
+<footer>
+    <div class="container">
+        <p>© 2023 - All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
