@@ -1,17 +1,27 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<title>Resume</title>
-<style>
-    body {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    
+    <!-- Fonts and AOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    
+    <!-- Your Existing Styles and Favicons -->
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Additional Styles -->
+    <style>
+        /* Body and Typography */
+        body {
         font-family: Arial, sans-serif;
     }
     .nav {
@@ -75,46 +85,250 @@
         text-align: center;
         padding: 10px;
     }
-</style>
+    </style>
 </head>
-
 <body>
-	<header>
-    <div class="container">
-        <h1>Resume</h1>
-        <div class="nav">
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="resume.html">Resume</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Resume</h1>
+            <div class="nav">
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <section class="resume" data-aos="fade-up">
+            <h2>Resume</h2>
+		    <p><a href="assets/resume/resume.pdf" target="_blank">View My Resume</a></p>
+            <!-- Interactive Timeline Section -->
+<div class="timeline">
+    <!-- Entry 1 -->
+    <div class="timeline-item" data-year="2012">
+        <h3> </h3>
+        <p> I graduate high school and attend university at the University of British Columbia, 
+            studying pre-med psychology and neuroscience. On the side, I found a music company with 
+            friends from school to manage local artists and host events akin to the "boiler room" model 
+            present in the UK.</p>
     </div>
-</header>
-<script>
-    function toggleMenu() {
-        document.getElementById('nav-menu').classList.toggle('active');
+    <!-- Entry 2 -->
+    <div class="timeline-item" data-year="2013">
+        <h3> </h3>
+        <p>We are managing 9 artists across physical media, music, and dance. 
+            We put on a quarterly immersive entertainment show featuring music, art, 
+            and dance from our portfolio of artists.</p>
+    </div>
+    <div class="timeline-item" data-year="2014">
+        <h3> </h3>
+        <p>I realize that medicine is not my calling. The words “be a doctor” lose their appeal, 
+            and I drop out of UBC to pursue business and the arts with our own music studio 
+            in Burlingame, California. Enter the genesis of Fanfare Entertainment.</p>
+    </div>
+    <div class="timeline-item" data-year="">
+        <h3> </h3>
+        <p>While operating our platform for digital music distribution run out of our recording 
+            studio, we meet with the manager for Keith Urban, and pivot to build Keith Urban’s Official App.</p>
+    </div>
+    <div class="timeline-item" data-year="2015">
+        <h3> </h3>
+        <p>We sell the studio to finance our pivot and lean into the full production of the Keith Urban App.</p>
+    </div>
+    <div class="timeline-item" data-year="">
+        <h3> </h3>
+        <p>The Keith Urban App shows wild success for us, with over 5 million downloads, and a peak DAU of around 500k.</p>
+    </div>
+    <div class="timeline-item" data-year="">
+        <h3> </h3>
+        <p>We expand our product offerings to make official apps for Bryan Adams, Heart, Jim Shore, and Redneck Nation.</p>
+    </div>
+    <div class="timeline-item" data-year="2019">
+        <h3> </h3>
+        <p>We are approached by an opportunity for another huge pivot. It turns out that our backend platform is almost a 
+            perfect 1-to-1 analog for healthcare data storage and analytics. Fanfare Entertainment is acquired 
+            and transitions to Apollo Health. I exit, after ensuring an effective transition, to pursue my own passions.</p>
+    </div>
+    <div class="timeline-item" data-year="2020">
+        <h3> </h3>
+        <p>The COVID pandemic, and my exit, allow me the freedom to explore my passions and interests 
+            in a way I never had the opportunity to before. I fulfill a childhood dream of becoming a 
+            professional video game player, and win a world championship in a game called Echo Arena. 
+            I also begin the process of finishing my college degree, which I had abandoned all those years ago. 
+            Instead of medicine, I realize my true passion is for business development, growth, and ideation.</p>
+    </div>
+    <div class="timeline-item" data-year="2021">
+        <h3> </h3>
+        <p>I graduate cum laude with a BS in business administration, however I realize there is 
+            still so much more to learn. I self-study topics like machine learning, blockchain, 
+            kubernetes, and venture capital. I realize that my true calling is through venture capital, 
+            and that my passion in life is helping others to build their businesses. I apply to further 
+            study with an MBA as well as an MS in Finance.</p>
+    </div>
+    <div class="timeline-item" data-year="2022">
+        <h3> </h3>
+        <p>I am accepted into both programs and allowed to pursue two master's degrees in tandem. I fully 
+            immerse myself in academia.</p>
+    </div>
+    <!-- Entry for 2023 -->
+    <div class="timeline-item" data-year="2023">
+        <h3> </h3>
+        <p>I secure my dream internship with Techstars, and finally have the opportunity to help 
+            founders build their dreams. I have the opportunity to work with two brilliant founders 
+            working on extraordinarily novel solutions to problems I had never considered. I am also 
+            given the opportunity to be the managing partner of the business school’s venture capital fund.</p>
+    </div>
+</div>
+        </section>
+        <section class="skills" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div class="skill-bar" data-percentage="90%">
+                <div class="filled-bar"></div>
+                <span>MOS</span>
+            </div>
+            <div class="skill-bar" data-percentage="65%">
+                <div class="filled-bar"></div>
+                <span>Java</span>
+            </div>
+            <div class="skill-bar" data-percentage="70%">
+                <div class="filled-bar"></div>
+                <span>R</span>
+            </div>
+            <div class="skill-bar" data-percentage="90%">
+                <div class="filled-bar"></div>
+                <span>HTML</span>
+            </div>
+            <div class="skill-bar" data-percentage="85%">
+                <div class="filled-bar"></div>
+                <span>CSS</span>
+            </div>
+            <div class="skill-bar" data-percentage="70%">
+                <div class="filled-bar"></div>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-bar" data-percentage="75%">
+                <div class="filled-bar"></div>
+                <span>Python</span>
+            </div>
+            <div class="skill-bar" data-percentage="90%">
+                <div class="filled-bar"></div>
+                <span>S&P Capital IQ</span>
+            </div>
+            <div class="skill-bar" data-percentage="90%">
+                <div class="filled-bar"></div>
+                <span>Product Management</span>
+            </div>
+            <div class="skill-bar" data-percentage="85%">
+                <div class="filled-bar"></div>
+                <span>Strategic Planning</span>
+            </div>
+            <div class="skill-bar" data-percentage="80%">
+                <div class="filled-bar"></div>
+                <span>Wireframing</span>
+            </div>
+            <div class="skill-bar" data-percentage="75%">
+                <div class="filled-bar"></div>
+                <span>Venture Capital</span>
+            </div>
+            <div class="skill-bar" data-percentage="75%">
+                <div class="filled-bar"></div>
+                <span>Investments</span>
+            </div>
+            <div class="skill-bar" data-percentage="80%">
+                <div class="filled-bar"></div>
+                <span>Portfolio Management</span>
+            </div>
+            <div class="skill-bar" data-percentage="80%">
+                <div class="filled-bar"></div>
+                <span>Due Diligence</span>
+            </div>
+            <div class="skill-bar" data-percentage="85%">
+                <div class="filled-bar"></div>
+                <span>Data Analytics</span>
+            </div>
+            <div class="skill-bar" data-percentage="100%">
+                <div class="filled-bar"></div>
+                <span>Verbal and Written Communication</span>
+            </div>
+            <div class="skill-bar" data-percentage="100%">
+                <div class="filled-bar"></div>
+                <span>Client Relations</span>
+            </div>
+            <div class="skill-bar" data-percentage="95%">
+                <div class="filled-bar"></div>
+                <span>Presentations</span>
+            </div>
+            <!-- Add more skill bars as needed -->
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2023 - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    let skillBars = document.querySelectorAll(".skill-bar");
+
+    function updateTextColor(skillBar, progressBar, percentageValue) {
+        let skillName = skillBar.querySelector(".skill-name");
+        let textWidthFromLeft = skillName.offsetLeft + skillName.offsetWidth;
+        let progressBarWidth = skillBar.offsetWidth * (percentageValue / 100);
+
+        if (progressBarWidth > textWidthFromLeft) {
+            skillName.classList.add("white-text");
+        } else {
+            skillName.classList.remove("white-text");
+        }
     }
-</script>
-	<main>
-    <section class="resume">
-        <h2>Resume</h2>
-		<p><a href="assets/resume/resume.pdf" target="_blank">View My Resume</a></p>
-        <p>(Coming Soon)</p>
-    </section>
-</main>
-<footer>
-    <div class="container">
-        <p>© 2023 - All Rights Reserved</p>
-    </div>
-</footer>
+
+    let skillObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let progressBar = entry.target.querySelector(".filled-bar");
+                let percentage = entry.target.getAttribute("data-percentage");
+                let percentageValue = parseInt(percentage, 80);
+                progressBar.style.width = '0%'; // Initialize at 0
+
+                setTimeout(() => {
+                    progressBar.style.width = percentage; // Set to target percentage
+                    updateTextColor(entry.target, progressBar, percentageValue);
+                }, 50); 
+            }
+        });
+    });
+
+    skillBars.forEach(bar => {
+        skillObserver.observe(bar);
+    });
+});
+
+    </script>    
 </body>
 </html>

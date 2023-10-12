@@ -65,3 +65,91 @@ footer p {
     margin-left: 0%;
     display: flex;
 }
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;  /* The line will now extend from the top to the last entry */
+    left: 25px;
+    width: 2px;
+    background-color: #333;
+}
+
+.timeline-item {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+    flex: 0 0 60px; /* Provides space for the year label */
+    text-align: right;
+}
+
+.timeline-item p {
+    margin-left: 50px; /* Provides space between the year label and the content */
+    flex: 1;
+}
+
+.timeline-item[data-year="2012"]::after,
+.timeline-item[data-year="2013"]::after,
+.timeline-item[data-year="2014"]::after,
+.timeline-item[data-year="2015"]::after,
+.timeline-item[data-year="2019"]::after,
+.timeline-item[data-year="2020"]::after,
+.timeline-item[data-year="2021"]::after,
+.timeline-item[data-year="2022"]::after,
+.timeline-item[data-year="2023"]::after {
+    content: attr(data-year);
+    position: absolute;
+    left: auto;/* Adjust this value to set the position of the year circle */
+    background-color: #112C47;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.skills {
+    padding: 20px;
+}
+
+.skill-bar {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+.filled-bar {
+    transition: width 2s ease;
+    height: 100%;
+    width: 0%; /* Initially set to 0, will animate to data-percentage */
+    background-color: #2766a4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill-bar span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-weight: bold;
+}
+
+.white-text {
+    color: white;
+}
