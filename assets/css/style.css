@@ -106,7 +106,8 @@ footer p {
 .timeline-item[data-year="2020"]::after,
 .timeline-item[data-year="2021"]::after,
 .timeline-item[data-year="2022"]::after,
-.timeline-item[data-year="2023"]::after {
+.timeline-item[data-year="2023"]::after,
+.timeline-item[data-year="2024"]::after {
     content: attr(data-year);
     position: absolute;
     left: auto;/* Adjust this value to set the position of the year circle */
